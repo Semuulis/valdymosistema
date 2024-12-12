@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valdymo Panelė</title>
+    <link rel="stylesheet" href="stiliai.css">
+</head>
+<body class="control-body">
+    <h1>Jūsų būstas</h1>
+    <div class="room-layout">
+        
+        <div class="light-section" id="miegamasis">
+            <img src="bookshelf.png" alt="Miegamasis" class="room-image" id="miegamasis-image">
+            <label for="miegamasis-slider">Miegamasis</label>
+            <input type="range" id="miegamasis-slider" min="0" max="100" value="50" onchange="adjustLight('miegamasis-image', this.value)">
+        </div>
+
+        <div class="light-section" id="salionas">
+            <img src="salionas.png" alt="Salionas" class="room-image" id="salionas-image">
+            <label for="salionas-slider">Salionas</label>
+            <input type="range" id="salionas-slider" min="0" max="100" value="50" onchange="adjustLight('salionas-image', this.value)">
+        </div>
+
+       
+        <div class="light-section" id="virtuve">
+            <img src="virutve.png" alt="Virtuvė" class="room-image" id="virtuve-image">
+            <label for="virtuve-slider">Virtuvė</label>
+            <input type="range" id="virtuve-slider" min="0" max="100" value="50" onchange="adjustLight('virtuve-image', this.value)">
+        </div>
+
+        <div class="light-section" id="garazas">
+            <img src="garazas.png" alt="garazas" class="room-image" id="garazas-image">
+            <label for="garazas-slider">Garazas</label>
+            <input type="range" id="garazas-slider" min="0" max="100" value="50" onchange="adjustLight('garazas-image', this.value)">
+        </div>
+    </div>
+    <script src="javaskriptas.js"></script>
+</body>
+
+<footer>
+    <p>&copy; 2024 Semūras Savickas. Visos teisės yra saugomos.</p>
+</footer>
+</html>
